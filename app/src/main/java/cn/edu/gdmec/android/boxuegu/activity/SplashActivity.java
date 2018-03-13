@@ -26,13 +26,13 @@ public class SplashActivity  extends AppCompatActivity {
 //        设置此界面为竖屏
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         init();
-
     }
     private void init() {
         tv_version = (TextView) findViewById(R.id.tv_version);
         try{
 //            获取程序管理信息
             PackageInfo info = getPackageManager().getPackageInfo(getPackageName(),0);
+            tv_version.setText("version:"+info.versionName);
         } catch (PackageManager.NameNotFoundException e) {
             e.printStackTrace();
             tv_version.setText("V");
