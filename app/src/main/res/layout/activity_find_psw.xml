@@ -22,6 +22,7 @@
         android:layout_height="wrap_content" />
     <EditText
         android:id="@+id/et_user_name"
+        android:text="您的用户名是？"
         android:hint="请输入您的用户名"
         android:singleLine="true"
         android:paddingLeft="8dp"
@@ -39,7 +40,7 @@
         android:layout_marginLeft="35dp"
         android:layout_marginRight="35dp"
         android:layout_marginTop="15dp"
-        android:text="您的姓名是?"
+        android:text="您的用户名是?"
         android:textColor="@android:color/white"
         android:textSize="18sp"
         android:layout_width="fill_parent"
